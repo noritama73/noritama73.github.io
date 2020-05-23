@@ -1,0 +1,67 @@
+header{
+    height: 60px;
+    /*background-color: aquamarine;*/
+    border-bottom: solid black 3px;
+}
+#header-text{
+    font-size: 22pt;
+    padding-left: 60px;
+    padding-top: 5px;
+}
+footer{
+    text-align: right;
+    padding-right: 2em;
+    /*background-color: aquamarine;*/
+}
+body{
+    background-color: whitesmoke;
+}
+#back-outer{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+p{
+    text-indent: 1em;
+    padding: 5px;
+}
+.letter-body{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+}
+li::before{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: solid 2px #495563;
+    border-right: solid 2px #495563;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    left: 0;
+    margin-top: -3px;
+}
+.active{
+    background-color: skyblue;
+    border-radius: 5px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+h2.title{
+    padding-top: 15px;
+}
+#twitter-tl{
+    text-align: center;
+}
