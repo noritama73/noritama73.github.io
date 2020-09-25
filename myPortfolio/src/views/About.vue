@@ -1,19 +1,33 @@
 <template>
   <div class="about page">
-    <dl>
-      <dt>2000年</dt>
-      <dd>誕生</dd>
-      <dt>2013年</dt>
-      <dd>栄光学園中学校 入学</dd>
-      <dt>2019年</dt>
-      <dd>東京理科大学 工学部 情報工学科 入学</dd>
+    <dl v-for="item in profile" :key="item.id">
+      <dt>{{item.year+'年'}}</dt><dd>{{item.caption}}</dd>
     </dl>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      profile: [
+        { id: 1, year: 2000, caption: "誕生" },
+        { id: 2, year: 2013, caption: "栄光学園中学校 入学" },
+        { id: 3, year: 2019, caption: "東京理科大学 工学部 情報工学科 入学" }
+      ]
+    };
+  }
+};
+</script>
+
 <style scoped>
+.about {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  margin-top: 20px;
+}
 dl {
-  display: inline-block;
   text-align: left;
   margin-left: auto;
   margin-right: auto;

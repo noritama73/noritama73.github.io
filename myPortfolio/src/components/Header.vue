@@ -1,11 +1,11 @@
 <template>
   <header>
     <nav>
-      <div class="tab"><router-link to="/">TOP</router-link></div>
-      <div class="tab"><router-link to="/about">ABOUT</router-link></div>
-      <div class="tab"><router-link to="/skills">SKILLS</router-link></div>
-      <div class="tab"><router-link to="/works">WORKS</router-link></div>
-      <div class="tab"><router-link to="/social">SOCIAL</router-link></div>
+      <router-link to="/"><div class="tab">TOP</div></router-link>
+      <router-link to="/about"><div class="tab">ABOUT</div></router-link>
+      <router-link to="/skills"><div class="tab">SKILLS</div></router-link>
+      <router-link to="/works"><div class="tab">WORKS</div></router-link>
+      <router-link to="/social"><div class="tab">SOCIAL</div></router-link>
     </nav>
   </header>
 </template>

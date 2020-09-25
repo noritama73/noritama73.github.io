@@ -8,7 +8,7 @@
         <dd>
           <span v-for="i in item.progress" :key="i"
             ><i class="fas fa-star"></i></span
-          ><span v-for="j in 5 - item.progress" :key="j*100"
+          ><span v-for="j in 5 - item.progress" :key="j * 100"
             ><i class="far fa-star"></i
           ></span>
         </dd>
@@ -56,16 +56,21 @@ export default {
 
 <style scoped>
 .skills {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
 }
+
 dl {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
+  margin: 30px;
 }
-dt {
-  width: 2em;
+
+dd {
+  text-align: left;
+}
+.name {
+  float: left;
 }
 
 dt::after {

@@ -30,7 +30,7 @@ export default {
           title: "ポートフォリオサイト",
           caption: "このサイトです。"
         },
-        { id: 3, link: "/", title: "NEXT", caption: "Coming Soon..." }
+        { id: 3, link: null, title: "NEXT", caption: "Coming Soon..." }
       ]
     };
   }
