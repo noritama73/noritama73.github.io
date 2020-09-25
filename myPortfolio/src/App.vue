@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Header from './components/Header'
+import Header from "./components/Header";
 export default {
   name: "App",
   components: { Header }
@@ -44,5 +44,16 @@ body {
   left: 0;
   width: inherit;
   padding: 0 50px;
+}
+
+@media screen and (max-width: 426px) {
+  #app {
+    font-size: 10px;
+  }
+
+  dl {
+    width:100%;
+    white-space: pre-line;
+  }
 }
 </style>
