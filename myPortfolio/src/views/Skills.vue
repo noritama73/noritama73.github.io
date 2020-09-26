@@ -15,6 +15,10 @@
         <dd>{{ item.caption }}</dd>
       </div>
     </dl>
+    <h2>Next comes...</h2>
+    <div v-for="(item, index) in interests" :key="index">
+      <div>{{ item }}</div>
+    </div>
   </div>
 </template>
 
@@ -47,8 +51,15 @@ export default {
           name: "Vue.js",
           progress: 3,
           caption: "このサイトもVueで作成しています。"
+        },
+        {
+          id: 5,
+          name: "CSS",
+          progress: 2,
+          caption: "製作を進めれば進めるほど、分からないことが出てきます。"
         }
-      ]
+      ],
+      interests: ["Docker", "AWS", "GO", "Rust", "flutter", "tailwind CSS"]
     };
   }
 };

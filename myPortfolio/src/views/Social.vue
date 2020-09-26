@@ -35,6 +35,7 @@ export default {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .content {
   border-radius: 30px;

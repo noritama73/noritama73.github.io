@@ -1,10 +1,10 @@
 <template>
   <div class="works page">
-    <div  v-for="item in work_contents" :key="item.id">
+    <div v-for="item in work_contents" :key="item.id">
       <a :href="item.link" target="_blank" rel="nooopener noreferrer">
         <div class="content">
-          <p class="title">{{item.title}}</p>
-          <p class="caption">{{item.caption}}</p>
+          <p class="title">{{ item.title }}</p>
+          <p class="caption">{{ item.caption }}</p>
         </div>
       </a>
     </div>
@@ -57,7 +57,7 @@ export default {
   margin: 5px;
   padding: 5px;
 }
-.content:hover{
+.content:hover {
   opacity: 0.8;
 }
 p.title {
@@ -68,5 +68,17 @@ a:visited,
 a:active {
   color: black;
   text-decoration: none;
+}
+
+@media screen and (max-width: 426px) {
+  .works {
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 90px;
+    height: 90px;
+  }
 }
 </style>
