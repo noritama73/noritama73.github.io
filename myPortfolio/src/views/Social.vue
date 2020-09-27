@@ -64,7 +64,7 @@ a:active {
 }
 
 @media screen and (max-width: 426px) {
-  .soscial {
+  .social {
     margin: 10px 0;
     justify-content: space-between;
   }
