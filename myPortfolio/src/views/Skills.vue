@@ -59,7 +59,7 @@ export default {
           caption: "製作を進めれば進めるほど、分からないことが出てきます。"
         }
       ],
-      interests: ["Docker", "AWS", "GO", "Rust", "flutter", "tailwind CSS"]
+      interests: ["Socket.IO", "AWS", "GO", "Rust", "Rails", "PHP","firebase"]
     };
   }
 };

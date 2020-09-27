@@ -62,4 +62,16 @@ a:active {
   color: black;
   text-decoration: none;
 }
+
+@media screen and (max-width: 426px) {
+  .soscial {
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 90px;
+    height: 90px;
+  }
+}
 </style>
