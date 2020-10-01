@@ -50,7 +50,7 @@ export default {
           id: 4,
           name: "Vue.js",
           progress: 3,
-          caption: "このサイトもVueで作成しています。"
+          caption: "このサイトもVueで作成しています。router,vuexなど勉強中。"
         },
         {
           id: 5,
@@ -59,7 +59,15 @@ export default {
           caption: "製作を進めれば進めるほど、分からないことが出てきます。"
         }
       ],
-      interests: ["Socket.IO", "AWS", "GO", "Rust", "Rails", "PHP","firebase"]
+      interests: [
+        "Node.js",
+        "Socket.IO",
+        "Nuxt.js",
+        "firebase",
+        "PHP",
+        "AWS",
+        "GO",
+      ]
     };
   }
 };
