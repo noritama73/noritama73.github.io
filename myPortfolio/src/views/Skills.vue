@@ -42,9 +42,9 @@ export default {
         {
           id: 3,
           name: "Python",
-          progress: 1,
+          progress: 3,
           caption:
-            "独学で文法に触れたくらいです。多少のファイル操作プログラムを作成。"
+            "独学で触れはじめ，大学の実験やインターンで使用しています．使えば使うほど学ぶことがでてくる..."
         },
         {
           id: 4,
@@ -57,6 +57,18 @@ export default {
           name: "CSS",
           progress: 2,
           caption: "製作を進めれば進めるほど、分からないことが出てきます。"
+        },
+        {
+          id: 6,
+          name: "AWS",
+          progress: 1,
+          caption: "仕事でlambda周りを少しふれました．現在一番の課題です．"
+        },
+        {
+          id: 7,
+          name: "Docker",
+          progress: 2,
+          caption: "lambda用にイメージを用意したり．単純に環境を作るだけならpyenvより使いやすいのでは？"
         }
       ],
       interests: [
@@ -65,7 +77,6 @@ export default {
         "Nuxt.js",
         "firebase",
         "PHP",
-        "AWS",
         "GO",
       ]
     };

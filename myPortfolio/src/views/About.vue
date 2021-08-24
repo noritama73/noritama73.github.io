@@ -13,7 +13,8 @@ export default {
       profile: [
         { id: 1, year: 2000, caption: "誕生" },
         { id: 2, year: 2013, caption: "栄光学園中学校 入学" },
-        { id: 3, year: 2019, caption: "東京理科大学 工学部 情報工学科 入学" }
+        { id: 3, year: 2019, caption: "東京理科大学 工学部 情報工学科 入学" },
+        { id: 4, year: 2021, caption: "株式会社ナウキャストにてインターン従事" }
       ]
     };
   }
