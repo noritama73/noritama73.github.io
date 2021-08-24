@@ -1,6 +1,7 @@
 # my-portfolio
 
-> noritama's portfolio[Here][1]
+> noritama's portfolio
+> [Here][1]
 
 [1]:https://noritama73.github.io/myPortfolio/dist/index.html
 
