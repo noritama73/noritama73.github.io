@@ -1,24 +1,28 @@
 <template>
   <div class="skills page">
-    <dl v-for="item in skills" :key="item.id">
-      <div class="name">
-        <dt>{{ item.name }}</dt>
+    <perfect-scrollbar>
+      <div>
+        <dl v-for="item in skills" :key="item.id">
+          <div class="name">
+            <dt>{{ item.name }}</dt>
+          </div>
+          <div class="caption">
+            <dd>
+              <span v-for="i in item.progress" :key="i"
+                ><i class="fas fa-star"></i></span
+              ><span v-for="j in 5 - item.progress" :key="j * 100"
+                ><i class="far fa-star"></i
+              ></span>
+            </dd>
+            <dd>{{ item.caption }}</dd>
+          </div>
+        </dl>
+        <h2>Next comes...</h2>
+        <div v-for="(item, index) in interests" :key="index">
+          <div>{{ item }}</div>
+        </div>
       </div>
-      <div class="caption">
-        <dd>
-          <span v-for="i in item.progress" :key="i"
-            ><i class="fas fa-star"></i></span
-          ><span v-for="j in 5 - item.progress" :key="j * 100"
-            ><i class="far fa-star"></i
-          ></span>
-        </dd>
-        <dd>{{ item.caption }}</dd>
-      </div>
-    </dl>
-    <h2>Next comes...</h2>
-    <div v-for="(item, index) in interests" :key="index">
-      <div>{{ item }}</div>
-    </div>
+    </perfect-scrollbar>
   </div>
 </template>
 
@@ -105,5 +109,11 @@ dd {
 
 dt::after {
   content: "：";
+}
+
+.ps {
+  height: 95vh;
+  width: 100vw;
+  border: 2px solid #000;
 }
 </style>

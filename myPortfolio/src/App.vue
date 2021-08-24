@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <Header />
-    <transition
-      name="router-transition"
-      enter-active-class="animated zoomIn"
-      leave-active-class="animated bounceOutRight"
-    >
-      <router-view />
-    </transition>
+      <transition
+        name="router-transition"
+        enter-active-class="animated zoomIn"
+        leave-active-class="animated bounceOutRight"
+      >
+        <router-view />
+      </transition>
   </div>
 </template>
 
@@ -21,6 +21,7 @@ export default {
 
 <style>
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css";
+
 
 body {
   margin: 0;
@@ -45,6 +46,7 @@ body {
   width: inherit;
   padding: 0 50px;
 }
+
 
 @media screen and (max-width: 426px) {
   #app {
